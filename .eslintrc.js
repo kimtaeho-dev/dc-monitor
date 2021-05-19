@@ -17,6 +17,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react', '@typescript-eslint'],
   rules: {
+    'no-use-before-define': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.ts', '.tsx'] }],
     'import/extensions': [
