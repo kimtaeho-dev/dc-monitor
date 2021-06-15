@@ -18,9 +18,11 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'no-shadow': 'off',
+    'no-redeclare': 'off',
     'no-unused-vars': 'off',
-    'no-use-before-define': 'off',
     'import/prefer-default-export': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.ts', '.tsx'] }],
     'import/extensions': [
