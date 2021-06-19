@@ -4,11 +4,13 @@ import {
   useState,
 } from 'react';
 
+import { getViewportData } from '../utils/viewport';
+
 function useViewport() {
-  const [state, setState] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [state, setState] = useState(getViewportData());
 
   const handleResize = useCallback(() => {
-    setState({ width: window.innerWidth, height: window.innerHeight });
+    setState(getViewportData());
   }, []);
 
   useLayoutEffect(() => {
