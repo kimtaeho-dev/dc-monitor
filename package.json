@@ -1,5 +1,5 @@
 {
-  "name": "dc-relay",
+  "name": "dc-monitor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
